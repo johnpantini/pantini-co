@@ -14,7 +14,7 @@
 По умолчанию терминал будет установлен в директорию **C:\Program Files (x86)\UnitedTraders**
 {% endhint %}
 
-![Мастер установки, следуйте указаниям](<../.gitbook/assets/image (29).png>)
+![Мастер установки, следуйте указаниям](<../.gitbook/assets/image (46).png>)
 
 ## Расшифровка обозначений ECN в окне Level2 и ленте сделок <a href="ecn-codes" id="ecn-codes"></a>
 
@@ -71,7 +71,7 @@ TRF - это trade reporting facility - механизм для сообщени
 
 У NYSE есть свой TRF, и у NASDAQ есть целых два: FINRA/NYSE TRF FINRA/NASDAQ TRF Chicago FINRA/NASDAQ TRF Carteret (расположен в Нью-Джерси).
 
-{% file src="../.gitbook/assets/NASDAQ TRF.PDF" %}
+{% file src="../.gitbook/assets/nasdaq-trf.pdf" %}
 NASDAQ TRF
 {% endfile %}
 
@@ -83,7 +83,7 @@ NASDAQ TRF
 
 Максимальная допустимая задержка принта в ленте - 10 секунд. Впрочем, из этого правила есть исключения.
 
-![Лента сделок (репродукция)](<../.gitbook/assets/image (7).png>)
+![Лента сделок (репродукция)](<../.gitbook/assets/image (6).png>)
 
 Лента сделок показывает в реальном режиме времени все транзакции, проходящие по данному инструменту. Показывается цена, объем в акциях, время и в каком рыночном центре прошла сделка. Столбик с условиями содержит некоторые технические параметры.
 
@@ -93,7 +93,7 @@ NASDAQ TRF
 
 См. файл ниже. Страница 17, раздел 4 Sale Condition, подраздел CTA Issues - это для бумаг NYSE. Чуть ниже на странице 18, подраздел UTP Issues - это для бумаг NASDAQ:
 
-{% file src="../.gitbook/assets/Daily_TAQ_Client_Spec_v3.0.pdf" %}
+{% file src="../.gitbook/assets/daily_taq_client_spec_v3.0.pdf" %}
 Daily TAQ Client Specification 
 {% endfile %}
 
@@ -185,7 +185,7 @@ Daily TAQ Client Specification
 
 В документе ниже подробно описаны все эти флаги - только для искушенных трейдеров:
 
-{% file src="../.gitbook/assets/UTP SPEC.pdf" %}
+{% file src="../.gitbook/assets/utp-spec.pdf" %}
 UTP Data Feed Services Specification
 {% endfile %}
 

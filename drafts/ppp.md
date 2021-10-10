@@ -22,7 +22,7 @@ description: Виджеты с кнопками торговли
 
 Портфель будет указан в первой вкладке:
 
-![](<../.gitbook/assets/image (287).png>)
+![](<../.gitbook/assets/image (292).png>)
 
 Для примеров в этом материале взят номер портфеля **D71111**.
 
@@ -79,11 +79,11 @@ console.table((await (await fetch(`https://api-invest.tinkoff.ru/trading/user/br
 
 В панели управления **MongoDB Realm** выбираем вкладку **Realm**, затем нажимаем на карточку приложения:
 
-![](<../.gitbook/assets/image (289).png>)
+![](<../.gitbook/assets/image (293).png>)
 
 В боковой панели выберите пункт **3rd Party Services**, затем нажмите **Add a Service**:
 
-![](<../.gitbook/assets/image (300).png>)
+![](<../.gitbook/assets/image (308).png>)
 
 На следующем этапе выбираем вариант **HTTP**, в поле с названием сервиса вводим **ppp**. Далее нажимайте кнопку **Add Service**:
 
@@ -97,43 +97,43 @@ console.table((await (await fetch(`https://api-invest.tinkoff.ru/trading/user/br
 
 Для примера будем использовать портфель **D71111** и токен **988d5822-be2e-42ee-a92a-6ded32a452b3**. В левой панели выберите раздел **Values**, далее нажмите на кнопку **Create New Value**:
 
-![](<../.gitbook/assets/image (291).png>)
+![](<../.gitbook/assets/image (294).png>)
 
 Введите значение портфеля (в двойных кавычках) под именем `alorSPBEXPortfolio`, далее нажимайте **Save Draft**.
 
-![Укажите ваш портфель фондового рынка Alor SPBEX](<../.gitbook/assets/image (293).png>)
+![Укажите ваш портфель фондового рынка Alor SPBEX](<../.gitbook/assets/image (296).png>)
 
 Теперь нужно создать ещё одно значение `alorRefreshToken`, на этот раз типа **Secret**:
 
-![Укажите ваш токен](<../.gitbook/assets/image (294).png>)
+![Укажите ваш токен](<../.gitbook/assets/image (298).png>)
 
 Нажимаем **Save Draft** и создаём дополнительное значение `alorRefreshTokenValue` типа **Value**, к которому привязываем секрет `alorRefreshToken`:
 
-![](<../.gitbook/assets/image (295).png>)
+![](<../.gitbook/assets/image (299).png>)
 
 Нажимаем **Save Draft**, нас перенесут на таблицу со всеми значениями.
 
 Теперь можно сохранить предварительные изменения, нажав на кнопку **REVIEW DRAFT & DEPLOY** в верхней части страницы:
 
-![](<../.gitbook/assets/image (299).png>)
+![](<../.gitbook/assets/image (302).png>)
 
 В появившемся окне нажимаем кнопку **Deploy**.
 
 Теперь возвращаемся в раздел **3rd Party Services** в боковой панели, выбираем ранее созданный сервис **ppp**, нажимаем кнопку **Add Incoming Webhook**:
 
-![](<../.gitbook/assets/image (302).png>)
+![](<../.gitbook/assets/image (303).png>)
 
 Вводим название **ppp-alor**:
 
-![](<../.gitbook/assets/image (308).png>)
+![](<../.gitbook/assets/image (314).png>)
 
 В разделе Webhook Settings будет сформирована постоянная ссылка. **Скопируйте её, она понадобится для вставки в бота позднее.**
 
-![](<../.gitbook/assets/image (305).png>)
+![](<../.gitbook/assets/image (311).png>)
 
 В разделе **Authorization **выберите вариант **Require Secret** и укажите ваш токен (начинается с `JP-`) из бота [https://t.me/pantini_warden_bot](https://t.me/pantini_warden_bot)
 
-![](<../.gitbook/assets/image (306).png>)
+![](<../.gitbook/assets/image (310).png>)
 
 {% hint style="warning" %}
 В дальнейшем, если понадобится перевыпустить токен Pantini Warden, не забудьте обновить функцию соответственно.
@@ -297,35 +297,35 @@ exports = async function (payload, response) {
 2. `tinkoffToken `- секрет с торговым токеном
 3. `tinkoffTokenValue` - значение секрета `tinkoffToken`
 
-![Укажите номер субсчёта](<../.gitbook/assets/image (296).png>)
+![Укажите номер субсчёта](<../.gitbook/assets/image (301).png>)
 
-![Укажите торговый токен Tinkoff](<../.gitbook/assets/image (297).png>)
+![Укажите торговый токен Tinkoff](<../.gitbook/assets/image (300).png>)
 
-![](<../.gitbook/assets/image (298).png>)
+![](<../.gitbook/assets/image (305).png>)
 
 Нажимаем **Save Draft**, нас перенесут на таблицу со всеми значениями.
 
 Теперь можно сохранить предварительные изменения, нажав на кнопку **REVIEW DRAFT & DEPLOY** в верхней части страницы:
 
-![](<../.gitbook/assets/image (299).png>)
+![](<../.gitbook/assets/image (302).png>)
 
 В появившемся окне нажимаем кнопку **Deploy**.
 
 Теперь возвращаемся в раздел **3rd Party Services** в боковой панели, выбираем ранее созданный сервис **ppp**, нажимаем кнопку **Add Incoming Webhook**:
 
-![](<../.gitbook/assets/image (302).png>)
+![](<../.gitbook/assets/image (303).png>)
 
 Вводим название **ppp-tinkoff**:
 
-![](<../.gitbook/assets/image (303).png>)
+![](<../.gitbook/assets/image (304).png>)
 
 В разделе Webhook Settings будет сформирована постоянная ссылка. **Скопируйте её, она понадобится для вставки в бота позднее.**
 
-![](<../.gitbook/assets/image (305).png>)
+![](<../.gitbook/assets/image (311).png>)
 
 В разделе **Authorization **выберите вариант **Require Secret** и укажите ваш токен (начинается с `JP-`) из бота [https://t.me/pantini_warden_bot](https://t.me/pantini_warden_bot)
 
-![](<../.gitbook/assets/image (306).png>)
+![](<../.gitbook/assets/image (310).png>)
 
 {% hint style="warning" %}
 В дальнейшем, если понадобится перевыпустить токен Pantini Warden, не забудьте обновить функцию соответственно.
@@ -455,7 +455,7 @@ exports = async function (payload, response) {
 
 Если всё в порядке, бот примет **Webhook **и сообщит об этом:
 
-![](<../.gitbook/assets/image (310).png>)
+![](<../.gitbook/assets/image (313).png>)
 
 {% hint style="info" %}
 Бот попробует активировать функцию в холостом режиме для проверки корректности ссылки.

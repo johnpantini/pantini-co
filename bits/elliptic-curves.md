@@ -342,7 +342,7 @@ $ node ecies.mjs
 
 Проверяем работу через [Postman](broken-reference), передав для шифрования строку `flag`:
 
-![Результат всегда будет разным из-за использования эфемерных ключей](<../.gitbook/assets/image (215).png>)
+![Результат всегда будет разным из-за использования эфемерных ключей](<../.gitbook/assets/image (217).png>)
 
 Сохраним ответ сервера в файл `encrypted.dat`, нажав на **Save Response **➡️** Save to a file**. Полученный файл понадобится для расшифровки, чтобы проверить работоспособность криптосистемы.
 
@@ -404,7 +404,7 @@ const decrypt = (payload) => {
 
 Проверка через [Postman](broken-reference):
 
-![Получили исходную строку flag](<../.gitbook/assets/image (216).png>)
+![Получили исходную строку flag](<../.gitbook/assets/image (218).png>)
 
 Чтобы сделать возможной атаку **Invalid curve attack**, мы намеренно реализуем метод `decrypt `с уязвимостью: не будем проверять принадлежность передаваемого ключа эллиптической кривой **`secp256r1`**.
 
@@ -625,8 +625,8 @@ $$
 Книга Practical Cryptography for Developers
 {% endembed %}
 
-{% file src="../.gitbook/assets/Breaking the Bluetooth Pairing Fixed Coordinate Invalid Curve Attack.pdf" %}
+{% file src="../.gitbook/assets/breaking-the-bluetooth-pairing-fixed-coordinate-invalid-curve-attack.pdf" %}
 
-{% file src="../.gitbook/assets/Practical Invalid Curve Attacks on TLS-ECDH.pdf" %}
+{% file src="../.gitbook/assets/practical-invalid-curve-attacks-on-tls-ecdh.pdf" %}
 
-{% file src="../.gitbook/assets/Validation of Elliptic Curve Public Keys.pdf" %}
+{% file src="../.gitbook/assets/validation-of-elliptic-curve-public-keys.pdf" %}
