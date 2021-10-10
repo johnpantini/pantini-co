@@ -10,9 +10,9 @@
 
 {% embed url="https://dashboard.heroku.com/terms-of-service" %}
 
-{% embed url="https://dashboard.heroku.com/terms-of-service" %}
-
 Нажимаем **Accept**. Нас перенесут на страницу [https://dashboard.heroku.com/apps](https://dashboard.heroku.com/apps)
+
+{% embed url="https://dashboard.heroku.com/apps" %}
 
 Нажимаем **Create new app**. Вводим любое имя, регион указываем **Europe**. Нажимаем **Create app**.
 
