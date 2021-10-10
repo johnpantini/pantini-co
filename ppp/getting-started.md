@@ -44,8 +44,8 @@
 
 Затем создайте сервисную машину, настроив автоматическое обновление через **GitHub**:
 
-{% content-ref url="service-machine.md" %}
-[service-machine.md](service-machine.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 Наконец, создайте приложение **ppp **в облачных сервисах **Auth0** и **MongoDB Realm**:
