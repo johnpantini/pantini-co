@@ -10,9 +10,7 @@ description: Heroku
 
 В поле **Role **можно указать **Professional Developer**, в поле **Primary development language** - **Node.js**.
 
-На почту придёт письмо с подтверждением. Переходим по ссылке, вводим пароль для учётной записи.
-
-Далее переходим на страницу [https://dashboard.heroku.com/terms-of-service](https://dashboard.heroku.com/terms-of-service)
+На почту придёт письмо с подтверждением. Переходим по ссылке, вводим пароль для учётной записи. Далее переходим на страницу [https://dashboard.heroku.com/terms-of-service](https://dashboard.heroku.com/terms-of-service)
 
 {% embed url="https://dashboard.heroku.com/terms-of-service" %}
 
