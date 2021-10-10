@@ -30,6 +30,7 @@
 * [Первые шаги](ppp/getting-started.md)
 * [🔑 GitHub](ppp/github.md)
 * [⛅️ Cloudflare Pages](ppp/cloudflare-pages.md)
+* [Сервисная машина](ppp/service-machine.md)
 * [🔑 Auth0](ppp/auth0.md)
 * [🔑 MongoDB](ppp/mongodb.md)
 * [☁️ Oracle Cloud](ppp/oracle-cloud.md)
