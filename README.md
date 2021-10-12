@@ -8,8 +8,8 @@
 
 Если хотите подписаться на мои [каналы](https://t.me/lair_of_john) и/или вступить в открытую группу **Pantini & Co**, то смотрите раздел **FAQ**:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="faq/telegram-resources/" %}
+[telegram-resources](faq/telegram-resources/)
 {% endcontent-ref %}
 
 Там же есть немного учебной информации про биржу и терминал [Аврора](faq/aurora.md).
@@ -26,12 +26,10 @@
 [aurora-save-password-auto-login.md](wastelands/aurora-save-password-auto-login.md)
 {% endcontent-ref %}
 
-Если вас интересуют мои авторские материалы про разработку/алгоритмы  (не обязательно биржевой тематики), то загляните в **Обрезки**:
+Если вас интересуют мои авторские материалы про разработку/алгоритмы (не обязательно биржевой тематики), то загляните в **Обрезки**:
 
 {% content-ref url="bits/elliptic-curves.md" %}
 [elliptic-curves.md](bits/elliptic-curves.md)
 {% endcontent-ref %}
-
-
 
 ####
