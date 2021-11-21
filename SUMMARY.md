@@ -37,7 +37,7 @@
 
 ## ❓ Рецепты <a href="recipes" id="recipes"></a>
 
-* [Открыть порт в Oracle Cloud](recipes/otkryt-port-v-oracle-cloud.md)
+* [Открыть порт в Oracle Cloud](recipes/open-port-oracle-cloud.md)
 
 ## Истоки <a href="origins" id="origins"></a>
 
