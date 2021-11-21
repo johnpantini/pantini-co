@@ -35,6 +35,10 @@
 * [🔑 MongoDB](ppp/mongodb.md)
 * [☁️ Oracle Cloud](ppp/oracle-cloud.md)
 
+## ❓Рецепты <a href="recipes" id="recipes"></a>
+
+* [Открыть порт в Oracle Cloud](recipes/otkryt-port-v-oracle-cloud.md)
+
 ## Истоки <a href="origins" id="origins"></a>
 
 * [Локальная разработка PPP](origins/ppp-local-development.md)
