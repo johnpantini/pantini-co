@@ -17,7 +17,7 @@
 * 23:00 - закрытие NYSE и NYSE MKT, постмаркет (after hours)
 * 00:00 - закрытие Bats BYX, Bats BZX, CHX, NASDAQ PSX и NSX, закрытие OTC Markets
 * 00:30 - закрытие IEX
-* 01:30 - закрытие FINRA/TRF
+* 01:00 - закрытие FINRA/TRF (зимой и летом)
 * 01:45 - конец дополнительной торговой сессии СПб
 * 02:00 - закрытие NASDAQ BX
 * 03:00 - закрытие Bats EDGA, Bats EDGX, NASDAQ и NYSE ARCA
@@ -35,7 +35,7 @@
 {% endfile %}
 
 {% hint style="info" %}
-Часы работы биржи NYSE и связанный с ней структур:
+Часы работы биржи NYSE и связанных с ней структур:
 
 [https://www.nyse.com/markets/hours-calendars](https://www.nyse.com/markets/hours-calendars)
 {% endhint %}
