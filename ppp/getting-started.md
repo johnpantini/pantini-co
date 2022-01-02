@@ -63,7 +63,3 @@
 {% content-ref url="oracle-cloud.md" %}
 [oracle-cloud.md](oracle-cloud.md)
 {% endcontent-ref %}
-
-{% hint style="warning" %}
-Рекомендуется пользоваться [Cloudflare Pages](cloudflare-pages.md) для работы с приложением на постоянной основе.
-{% endhint %}

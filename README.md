@@ -6,7 +6,7 @@
 [getting-started.md](ppp/getting-started.md)
 {% endcontent-ref %}
 
-Если хотите подписаться на мои [каналы](https://t.me/lair_of_john) и/или вступить в открытую группу **Pantini & Co**, то смотрите раздел **FAQ**:
+Если хотите подписаться на мои [каналы](https://t.me/lair\_of\_john) и/или вступить в открытую группу **Pantini & Co**, то смотрите раздел **FAQ**:
 
 {% content-ref url="faq/telegram-resources/" %}
 [telegram-resources](faq/telegram-resources/)
@@ -31,5 +31,3 @@
 {% content-ref url="bits/elliptic-curves.md" %}
 [elliptic-curves.md](bits/elliptic-curves.md)
 {% endcontent-ref %}
-
-####

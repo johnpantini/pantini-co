@@ -35,24 +35,20 @@
 * [🔑 MongoDB](ppp/mongodb.md)
 * [☁️ Oracle Cloud](ppp/oracle-cloud.md)
 
-## ❓ Рецепты <a href="recipes" id="recipes"></a>
+## ❓ Рецепты <a href="#recipes" id="recipes"></a>
 
 * [Открыть порт в Oracle Cloud](recipes/open-port-oracle-cloud.md)
 * [Настройка домена](recipes/setting-up-domain.md)
 
-## Истоки <a href="origins" id="origins"></a>
+## Истоки <a href="#origins" id="origins"></a>
 
 * [Локальная разработка PPP](origins/ppp-local-development.md)
 
-## Пустоши <a href="wastelands" id="wastelands"></a>
+## Пустоши <a href="#wastelands" id="wastelands"></a>
 
 * [Аврора - сохранение пароля и автоматический вход](wastelands/aurora-save-password-auto-login.md)
 
-## Обрезки <a href="bits" id="bits"></a>
+## Обрезки <a href="#bits" id="bits"></a>
 
 * [Решето Аткина](bits/resheto-atkina.md)
 * [🖍 Эллиптические кривые](bits/elliptic-curves.md)
-
-## Черновики <a href="drafts" id="drafts"></a>
-
-* [⭐️ PPP](drafts/ppp.md)
