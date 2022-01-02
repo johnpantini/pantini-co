@@ -4,7 +4,7 @@
 Эта инструкция посвящена созданию бесплатного личного виртуального сервера, расширяющего возможности приложения PPP.
 {% endhint %}
 
-Бесплатно можно получить вычислительные ресурсы в размере 24 GB памяти и 4 OCPU (Oracle Compute Unit - аналог процессорного ядра) на базе ARM в рамках продукта [Ampere A1](https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm).
+Бесплатно можно получить вычислительные ресурсы в размере 24 GB памяти и 4 OCPU (Oracle Compute Unit - аналог процессорного ядра) на базе ARM в рамках продукта [Ampere A1](https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier\_topic-Always\_Free\_Resources.htm).
 
 ## Создание учётной записи
 
@@ -42,7 +42,7 @@
 
 ![](<../.gitbook/assets/image (326).png>)
 
-В разделе **Shape **нажмите **Change Shape**, выберите **Ampere**, выберите флажок **VM.Standard.A1.Flex**, задайте 4 ядра, 24 GB памяти:
+В разделе **Shape** нажмите **Change Shape**, выберите **Ampere**, выберите флажок **VM.Standard.A1.Flex**, задайте 4 ядра, 24 GB памяти:
 
 ![](<../.gitbook/assets/image (324).png>)
 

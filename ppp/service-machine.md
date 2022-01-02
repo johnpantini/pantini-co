@@ -14,10 +14,14 @@
 
 {% embed url="https://dashboard.heroku.com/apps" %}
 
-Нажимаем **Create new app**. Вводим любое имя, регион указываем **Europe**. Нажимаем **Create app**.
+Нажимаем **Create new app**. Вводим любое имя, регион указываем **Europe**. Нажимаем **Create app**:
+
+![](<../.gitbook/assets/image (343).png>)
 
 Нас перенесут на вкладку **Deploy**. В секции **Deployment method** выбираем **GitHub**. Нажимаем **Connect to GitHub**. Далее во всплывающем окне нажимаем **Authorize heroku**.
 
 После этого страница обновится, в поле **repo-name** вводим **ppp** и нажимаем кнопку **Search**. Снизу появится строка с названием репозитория, нажимаем **Connect**.
 
-Далее нажимаем кнопки **Enable Automatic Deploys** и **Deploy Branch**.
+Далее нажимаем кнопки **Enable Automatic Deploys** и **Deploy Branch**:
+
+![](<../.gitbook/assets/image (348).png>)
