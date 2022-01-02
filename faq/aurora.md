@@ -1,10 +1,10 @@
 # Терминал Аврора
 
-Аврора - бесплатная торговая платформа от компании United Traders, позволяющая просматривать ленту сделок и книгу заявок по биржам (рыночным центрам) США. Для использования регистрируемся на сайте, получаем логин и пароль. Пополнять счёт не обязательно.
+Аврора - бесплатная торговая платформа от компании United Traders, позволяющая просматривать ленту сделок и книгу заявок по биржам (рыночным центрам) США. Для использования регистрируемся на сайте United Traders, получаем логин и пароль. Пополнять счёт не обязательно.
 
 ## Загрузка терминала Аврора
 
-[https://unitedtraders.com/trading/aurora](https://unitedtraders.com/trading/aurora)
+[https://unitedtraders.biz/trading/aurora](https://unitedtraders.biz/trading/aurora)
 
 ## Установка Авроры
 
@@ -16,36 +16,36 @@
 
 ![Мастер установки, следуйте указаниям](<../.gitbook/assets/image (46).png>)
 
-## Расшифровка обозначений ECN в окне Level2 и ленте сделок <a href="ecn-codes" id="ecn-codes"></a>
+## Расшифровка обозначений ECN в окне Level2 и ленте сделок <a href="#ecn-codes" id="ecn-codes"></a>
 
-| Лента сделок | Level2      | Описание (если есть)                                                                                                                                                                                                                                                         |
-| ------------ | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **A**        | **AMEX**    | American Stock Exchange, была объединена с NYSE. 10 мая 2012 переименована в NYSE MKT LLC                                                                                                                                                                                    |
-| **AO**       | **AMEX**    | -                                                                                                                                                                                                                                                                            |
-| **B**        | **NQBX**    | Бостонская биржа, поглощена NASDAQ OMX Group                                                                                                                                                                                                                                 |
-| **BO**       | **BOX**     | BOX Options Exchange, LLC                                                                                                                                                                                                                                                    |
-| **BT**       | **BATS**    | BATS Exchange, была поглощена Cboe Global Markets, владеющей биржей CBOE (Чикагская биржа опционов)                                                                                                                                                                          |
-| **BY**       | **BYX**     | BATS Y (BYX) Exchange. BYX allows the trading of listed NYSE, AMEX, NYSE Arca, and Nasdaq stocks in quantities from 1 to 30,000. Even, odd and mixed lot orders are supported (even lots are multiples of 100, mixed lots are not, odd lots are orders less than 100 shares) |
-| **C**        | **NSX**     | National Stock Exchange                                                                                                                                                                                                                                                      |
-| **C2**       | **CBOE_C2** | C2 operates under a separate exchange license with its own rules and access structure, employing a market model that provides a maker-taker fee schedule and a pure pro-rata matching algorithm for multiply-listed classes                                                  |
-| **DA**       | **EDGA**    | Bats EDGA Exchange, Inc                                                                                                                                                                                                                                                      |
-| **DX**       | **EDGX**    | Bats EDGX Exchange, Inc                                                                                                                                                                                                                                                      |
-| **EA**       | **ARB**     | -                                                                                                                                                                                                                                                                            |
-| **EB**       | **BAB**     | -                                                                                                                                                                                                                                                                            |
-| **EDA**      | **EAB**     | Bats EDGA Exchange, Inc                                                                                                                                                                                                                                                      |
-| **EDX**      | **EXB**     | Bats EDGX Exchange, Inc                                                                                                                                                                                                                                                      |
-| **EI**       | **NASD**    | -                                                                                                                                                                                                                                                                            |
-| **I**        | **ISB**     | -                                                                                                                                                                                                                                                                            |
-| **MW**       | **CHX**     | Chicago Stock Exchange                                                                                                                                                                                                                                                       |
-| **N**        | **NYSE**    | Нью-Йоркская фондовая биржа                                                                                                                                                                                                                                                  |
-| **OB**       | **NYB**     | -                                                                                                                                                                                                                                                                            |
-| **PA**       | **PACX**    | NYSE Arca                                                                                                                                                                                                                                                                    |
-| **Q**        | **NSDQ**    | Nasdaq, принадлежит NASDAQ OMX Group                                                                                                                                                                                                                                         |
-| **W**        | **CBOE**    | Чикагская биржа опционов                                                                                                                                                                                                                                                     |
-| **X**        | **NQPX**    | Philadelphia Stock Exchange, поглощена NASDAQ OMX Group                                                                                                                                                                                                                      |
-| **XO**       | **PHLX**    | Philadelphia Stock Exchange                                                                                                                                                                                                                                                  |
-| **Y**        | **ISE**     | Nasdaq International Securities Exchange                                                                                                                                                                                                                                     |
-| **QD**       | -           | Dark Pool - FINRA/TRF, частный рыночный центр ликвидности                                                                                                                                                                                                                    |
+| Лента сделок | Level2       | Описание (если есть)                                                                                                                                                                                                                                                         |
+| ------------ | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **A**        | **AMEX**     | American Stock Exchange, была объединена с NYSE. 10 мая 2012 переименована в NYSE MKT LLC                                                                                                                                                                                    |
+| **AO**       | **AMEX**     | -                                                                                                                                                                                                                                                                            |
+| **B**        | **NQBX**     | Бостонская биржа, поглощена NASDAQ OMX Group                                                                                                                                                                                                                                 |
+| **BO**       | **BOX**      | BOX Options Exchange, LLC                                                                                                                                                                                                                                                    |
+| **BT**       | **BATS**     | BATS Exchange, была поглощена Cboe Global Markets, владеющей биржей CBOE (Чикагская биржа опционов)                                                                                                                                                                          |
+| **BY**       | **BYX**      | BATS Y (BYX) Exchange. BYX allows the trading of listed NYSE, AMEX, NYSE Arca, and Nasdaq stocks in quantities from 1 to 30,000. Even, odd and mixed lot orders are supported (even lots are multiples of 100, mixed lots are not, odd lots are orders less than 100 shares) |
+| **C**        | **NSX**      | National Stock Exchange                                                                                                                                                                                                                                                      |
+| **C2**       | **CBOE\_C2** | C2 operates under a separate exchange license with its own rules and access structure, employing a market model that provides a maker-taker fee schedule and a pure pro-rata matching algorithm for multiply-listed classes                                                  |
+| **DA**       | **EDGA**     | Bats EDGA Exchange, Inc                                                                                                                                                                                                                                                      |
+| **DX**       | **EDGX**     | Bats EDGX Exchange, Inc                                                                                                                                                                                                                                                      |
+| **EA**       | **ARB**      | -                                                                                                                                                                                                                                                                            |
+| **EB**       | **BAB**      | -                                                                                                                                                                                                                                                                            |
+| **EDA**      | **EAB**      | Bats EDGA Exchange, Inc                                                                                                                                                                                                                                                      |
+| **EDX**      | **EXB**      | Bats EDGX Exchange, Inc                                                                                                                                                                                                                                                      |
+| **EI**       | **NASD**     | -                                                                                                                                                                                                                                                                            |
+| **I**        | **ISB**      | -                                                                                                                                                                                                                                                                            |
+| **MW**       | **CHX**      | Chicago Stock Exchange                                                                                                                                                                                                                                                       |
+| **N**        | **NYSE**     | Нью-Йоркская фондовая биржа                                                                                                                                                                                                                                                  |
+| **OB**       | **NYB**      | -                                                                                                                                                                                                                                                                            |
+| **PA**       | **PACX**     | NYSE Arca                                                                                                                                                                                                                                                                    |
+| **Q**        | **NSDQ**     | Nasdaq, принадлежит NASDAQ OMX Group                                                                                                                                                                                                                                         |
+| **W**        | **CBOE**     | Чикагская биржа опционов                                                                                                                                                                                                                                                     |
+| **X**        | **NQPX**     | Philadelphia Stock Exchange, поглощена NASDAQ OMX Group                                                                                                                                                                                                                      |
+| **XO**       | **PHLX**     | Philadelphia Stock Exchange                                                                                                                                                                                                                                                  |
+| **Y**        | **ISE**      | Nasdaq International Securities Exchange                                                                                                                                                                                                                                     |
+| **QD**       | -            | Dark Pool - FINRA/TRF, частный рыночный центр ликвидности                                                                                                                                                                                                                    |
 
 Другие рыночные центры одинаково пишутся в ленте сделок и в Level2 (редкие).
 
@@ -94,7 +94,7 @@ NASDAQ TRF
 См. файл ниже. Страница 17, раздел 4 Sale Condition, подраздел CTA Issues - это для бумаг NYSE. Чуть ниже на странице 18, подраздел UTP Issues - это для бумаг NASDAQ:
 
 {% file src="../.gitbook/assets/daily_taq_client_spec_v3.0.pdf" %}
-Daily TAQ Client Specification 
+Daily TAQ Client Specification
 {% endfile %}
 
 В ленте показывается только инициатор (агрессор) сделки. Помним, что если кто-то купил акции, то ещё кто-то эти же акции продал в это же время. Не бывает односторонних сделок.
@@ -105,7 +105,7 @@ Daily TAQ Client Specification
 4. Розовый цвет - продажа сквозь рынок (trade through). То есть хуже последнего ask.
 5. Бирюзовый цвет - покупка сквозь рынок. То есть хуже последнего bid.
 
-## Флаги условий для бумаг компаний, листингованных на NYSE <a href="ts-nyse-flags" id="ts-nyse-flags"></a>
+## Флаги условий для бумаг компаний, листингованных на NYSE <a href="#ts-nyse-flags" id="ts-nyse-flags"></a>
 
 | Флаг состояния | Описание                                                                                                                                                              |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -137,7 +137,7 @@ Daily TAQ Client Specification
 | 9              | Исправленная консолидированная цена закрытия согласно котирующему рынку                                                                                               |
 | P              | Прошлая опорная цена (Prior Reference Price)                                                                                                                          |
 
-## Флаги условий для бумаг компаний, листингованных на NASDAQ <a href="ts-nasdaq-flags" id="ts-nasdaq-flags"></a>
+## Флаги условий для бумаг компаний, листингованных на NASDAQ <a href="#ts-nasdaq-flags" id="ts-nasdaq-flags"></a>
 
 | Флаг состояния | Описание                                                                                                                                                              |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
