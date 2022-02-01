@@ -28,7 +28,7 @@
 
 В поле **Name** вводите **@**, в поле **IPv4 address** - адрес сервера. Флажок **Proxy status** необходимо снять. Затем нажимайте **Save**:
 
-![](<../.gitbook/assets/image (355).png>)
+![](<../.gitbook/assets/image (355) (1).png>)
 
 ## Dot CF/Freenom (бесплатный вариант)
 
@@ -54,7 +54,7 @@
 
 Список доменов можно посмотреть, нажав [Domains ](https://my.freenom.com/clientarea.php?action=domains)в подвале страницы. Найдя запись в таблице со своим доменом, нажимайте кнопку **Manage Domain**:
 
-![](<../.gitbook/assets/image (347) (1).png>)
+![](<../.gitbook/assets/image (347) (1) (1).png>)
 
 На открывшейся странице выбирайте вкладку **Manage Freenom DNS**. Теперь приготовьте IP-адрес сервера, к которому будете привязывать домен. Вводите этот адрес в поле **Target**, а поле **Name** оставьте пустым. Нажимайте **Save Changes**:
 

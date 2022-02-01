@@ -40,6 +40,7 @@
 * [Открыть порт в Oracle Cloud](recipes/open-port-oracle-cloud.md)
 * [Настройка домена](recipes/setting-up-domain.md)
 * [Настройка Supabase](recipes/supabase.md)
+* [Настройка Pusher](recipes/pusher.md)
 
 ## Истоки <a href="#origins" id="origins"></a>
 
