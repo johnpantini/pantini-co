@@ -6,17 +6,15 @@ description: '@onaryx'
 
 [https://t.me/onaryx](https://t.me/onaryx)
 
-Канал сообщает о торговых паузах на бирже СПб за три минуты до остановки. Чтобы узнать время возобновления торгов, следует перейти по ссылке в сообщении с подробностями.
-
-![](../../.gitbook/assets/image.png)
-
-Дополнительно сообщается о паузах на стороне бирж NYSE и NASDAQ. Если на зарубежных площадках происходит приостановка торгов, биржа СПб может также остановить торги.
-
-![](<../../.gitbook/assets/image (1).png>)
+Канал сообщает о торговых паузах на бирже СПб за три минуты до остановки. Дополнительно сообщается о паузах на стороне бирж NYSE и NASDAQ.
 
 Информация отслеживается с ресурса **NasdaqTrader**:
 
 {% embed url="https://www.nasdaqtrader.com/trader.aspx?id=TradeHalts" %}
+
+Это проект с открытым исходным кодом, вы можете настроить себе клон в ppp:
+
+{% embed url="https://github.com/johnpantini/ppp" %}
 
 ### Приостановка торгов - теория
 
@@ -26,22 +24,22 @@ description: '@onaryx'
 
 Также по ссылке доступна 21-дневная история приостановок.
 
-Еще можно смотреть тут: [https://markets.cboe.com/us/equities/market_statistics/halts/](https://markets.cboe.com/us/equities/market_statistics/halts/)
+Еще можно смотреть тут: [https://markets.cboe.com/us/equities/market\_statistics/halts/](https://markets.cboe.com/us/equities/market\_statistics/halts/)
 
 Для бумаг с OTC (over the counter - внебиржевые торги) список (и историю за 6 месяцев) можно найти тут: [https://otce.finra.org/otce/tradingHalts](https://otce.finra.org/otce/tradingHalts)
 
 В соответствии с требованиями FINRA, если на головной площадке торги остановились, все рыночные центры ликвидности должны приостановить торги. Например, если остановились торги по акции **BA**, которая листингована на NYSE, то торги остановятся и на NASDAQ, и на BATS, и в даркпулах.
 
-В таблице по ссылке (с nasdaqtrader.com) несколько колонок: 
+В таблице по ссылке (с nasdaqtrader.com) несколько колонок:
 
 * **Halt Date** - дата приостановки торгов в формате месяц/день/год
 * **Halt Time** - время приостановки торгов, Eastern Time (Североамериканское восточное время)
 * **Issue Symbol** - тикер ценной бумаги, по которой приостановили торги Market - NASDAQ, NYSE, AMEX - в зависимости от того, где листингована бумага
-* **Reason Codes **- коды причин приостановки
+* \*\*Reason Codes \*\*- коды причин приостановки
 * **Pause Threshold Price** - пороговая индикативная цена, заполняется в случае торговой паузы (trading pause)
 * **Resumption Date** - дата возобновления торгов
 * **Resumption Quote Time** - время возобновления котирования (публикации книги ордеров и приёма заявок)
-* **Resumption Trade Time** - время возобновления торгов (можно покупать/продавать, идут принты в ленту сделок)      
+* **Resumption Trade Time** - время возобновления торгов (можно покупать/продавать, идут принты в ленту сделок)
 
 Если колонка не заполнена, значит, данные появятся позднее (как только станут известны). **Pause Threshold Price** заполняется только для торговых пауз (trading pause).
 
@@ -49,14 +47,14 @@ description: '@onaryx'
 
 ### Коды торговых пауз (NYSE/NASDAQ)
 
-Коды причин (столбик **Reason Code** из таблицы): 
+Коды причин (столбик **Reason Code** из таблицы):
 
 * **T1: Halt - News Pending.** Приостановка торгов связана с выходящей новостью. Корпоративная этика и регуляция SEC (Regulation FD - "Fair Disclosure", регламент о добросовестном раскрытии информации) предполагает публикацию важных новостей в часы, когда рынок не работает (можно публиковать новости на премаркете или постмаркете). Если новость необходимо выпустить в основную торговую сессию, торги приостанавливаются
-* **T2: Halt - News Released.** Новости вышли, компания выполняет требования о добросовестном раскрытии информации (Regulation FD) через методики, рекомендуемые SEC (Комиссия по ценным бумагам и биржам США). Обычно это заполнение формы 8-K и публикация новости на своем (принадлежащем компании) сайте, аккаунтах в соц. сетях. Суть в том, что важная информация должна быть открыта в доступ для широкой аудитории (для всех сразу), чтобы у аналитиков, институциональных инвесторов и других заинтересованных лиц не было торговых преимуществ. Больше информации тут: [https://media2.mofo.com/documents/faqs-regulation-fd.pdf](https://media2.mofo.com/documents/faqs-regulation-fd.pdf) 
+* **T2: Halt - News Released.** Новости вышли, компания выполняет требования о добросовестном раскрытии информации (Regulation FD) через методики, рекомендуемые SEC (Комиссия по ценным бумагам и биржам США). Обычно это заполнение формы 8-K и публикация новости на своем (принадлежащем компании) сайте, аккаунтах в соц. сетях. Суть в том, что важная информация должна быть открыта в доступ для широкой аудитории (для всех сразу), чтобы у аналитиков, институциональных инвесторов и других заинтересованных лиц не было торговых преимуществ. Больше информации тут: [https://media2.mofo.com/documents/faqs-regulation-fd.pdf](https://media2.mofo.com/documents/faqs-regulation-fd.pdf)
 * **T5: Single Stock Trading Pause in Effect.** Цена бумаги изменилась более, чем на 10% (включительно) за 5 минут
 * **T6: Halt - Extraordinary Market Activity.** Необычная рыночная активность. Срабатывает, если NASDAQ обнаруживает проблемы (которые могут привести к изменению цены) с котированием, репортингом в ленту или проблемы соединения. Пока технические проблемы будут устраняться, торги не проводятся
 * **T8: Halt - Exchange-Traded-Fund (ETF).** Срабатывает в ETF, если обнаружены проблемы в базовых активах
-* **T12: Halt - Additional Information Requested by NASDAQ.** Срабатывает, если NASDAQ ожидает дополнительную информацию о бумаге (эмитенту направляются вопросы, на которые тот должен дать ответ). Пример: [http://ir.nasdaq.com/static-files/01e4e9dd-a14a-4e5e-a1e6-799cc368b3de](http://ir.nasdaq.com/static-files/01e4e9dd-a14a-4e5e-a1e6-799cc368b3de) 
+* **T12: Halt - Additional Information Requested by NASDAQ.** Срабатывает, если NASDAQ ожидает дополнительную информацию о бумаге (эмитенту направляются вопросы, на которые тот должен дать ответ). Пример: [http://ir.nasdaq.com/static-files/01e4e9dd-a14a-4e5e-a1e6-799cc368b3de](http://ir.nasdaq.com/static-files/01e4e9dd-a14a-4e5e-a1e6-799cc368b3de)
 * **H4: Halt - Non-compliance**. Несоответствие требованиям листинга NASDAQ
 * **H9: Halt - Not Current**. Компания не опубликовала актуальный отчёт в регулирующие органы (SEC)
 * **H10: Halt - SEC Trading Suspension.** SEC приостановила торги (что-то серьезное, торги приостанавливаются на неопределенное время). [https://www.sec.gov/investor/alerts/tradingsuspensions.pdf](https://www.sec.gov/investor/alerts/tradingsuspensions.pdf) Приостановка торгов со стороны SEC возникает в следующих случаях: недостаточность или неточность информации о компании в SEC, просрочка регулярных отчётов; подозрения в недобросовестном раскрытии информации на сайте компании в пресс-релизах; подозрения в недобросовестных практиках инсайдерской торговли, манипуляции ценой и др.
@@ -82,8 +80,8 @@ description: '@onaryx'
 * **R4: Qualifications Issues Reviewed/Resolved; Quotations/Trading to Resume**. См. код **H4**
 * **R9: Filing Requirements Satisfied/Resolved; Quotations/Trading To Resume.** См. код **H9**
 * **C3: Issuer News Not Forthcoming; Quotations/Trading To Resume.** Публикация новостей отменена. См. коды **T2** и **T3**
-* **C4: Qualifications Halt Ended; Maintenance Requirements Met.** См. коды **H4 **и **R4**
-* **C9: Qualifications Halt Concluded; Filings Met; Quotes/Trades To Resume.** См. коды **H9 **и **R9**
+* **C4: Qualifications Halt Ended; Maintenance Requirements Met.** См. коды \*\*H4 \*\*и **R4**
+* **C9: Qualifications Halt Concluded; Filings Met; Quotes/Trades To Resume.** См. коды \*\*H9 \*\*и **R9**
 * **C11: Trade Halt Concluded By Other Regulatory Auth.; Quotes/Trades Resume.** См. код **H11**
 * **R1: New Issue Available.** См. код **T1**
 * **R2: Issue Available.** См. код **T2**
