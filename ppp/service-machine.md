@@ -24,4 +24,4 @@
 
 Далее нажимаем кнопки **Enable Automatic Deploys** и **Deploy Branch**:
 
-![](<../.gitbook/assets/image (348).png>)
+![](<../.gitbook/assets/image (348) (1).png>)

@@ -41,6 +41,7 @@
 * [Настройка домена](recipes/setting-up-domain.md)
 * [Настройка Supabase](recipes/supabase.md)
 * [Настройка Pusher](recipes/pusher.md)
+* [Oracle: сетевой диск+VPN](recipes/oracle-network-drive-vpn.md)
 
 ## Истоки <a href="#origins" id="origins"></a>
 
