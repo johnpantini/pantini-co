@@ -24,6 +24,7 @@
   * [Расписание торгов СПб/США](faq/stock-exchange/spbex-us-schedule.md)
   * [Определение цен открытия/закрытия бумаг с Nasdaq](faq/stock-exchange/nasdaq-crosses.md)
 * [Alor](faq/alor.md)
+* [Публичный feed новостей рынков US](faq/us-market-public-feed.md)
 
 ## 💻 PPP
 
