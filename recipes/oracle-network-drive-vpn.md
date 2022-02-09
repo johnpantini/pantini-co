@@ -118,13 +118,18 @@ sudo sudo systemctl restart nmb
 Но сперва откройте порт **9993** в Oracle [по инструкции](open-port-oracle-cloud.md).
 {% endhint %}
 
-Вернитесь в ppp, и добавьте следующие команды в конец к уже существующим:
+Вернитесь в ppp и добавьте следующие команды в конец к уже существующим:
+
+{% hint style="warning" %}
+Замените `<числовой id сети>` на id вашей сети без скобок, скопированный из панели управления ZeroTier в браузере (раздел **Basics**, поле **Network ID**).
+{% endhint %}
 
 ```
 sudo firewall-cmd --permanent --add-port=9993/tcp
 sudo firewall-cmd --reload
 curl -s https://install.zerotier.com | sudo bash
 sudo zerotier-cli info
+sudo zerotier-cli join <числовой id сети>
 ```
 
 Нажмите **Переустановить сервис**. По завершении операции вы увидите в терминале строку вида:
