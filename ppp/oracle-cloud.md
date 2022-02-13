@@ -69,3 +69,7 @@ Out of capacity for shape VM.Standard.A1.Flex in availability domain ...
 Когда машина будет создана и запущена, настройка завершается:
 
 ![Ваши данные по доменам могут отличаться](<../.gitbook/assets/image (329).png>)
+
+{% hint style="danger" %}
+Если возникли сложности с регистрацией в Oracle Cloud, в качестве альтернативы можно использовать [машину на AWS](../recipes/aws-micro-instance.md) в течение 12 месяцев бесплатно.
+{% endhint %}

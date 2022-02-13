@@ -38,6 +38,7 @@
 
 ## ❓ Рецепты <a href="#recipes" id="recipes"></a>
 
+* [Микромашина в AWS](recipes/aws-micro-instance.md)
 * [Открыть порт в Oracle Cloud](recipes/open-port-oracle-cloud.md)
 * [Настройка домена](recipes/setting-up-domain.md)
 * [Настройка Supabase](recipes/supabase.md)

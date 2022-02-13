@@ -63,3 +63,7 @@
 {% content-ref url="oracle-cloud.md" %}
 [oracle-cloud.md](oracle-cloud.md)
 {% endcontent-ref %}
+
+{% hint style="danger" %}
+Если возникли сложности с регистрацией в Oracle Cloud, в качестве альтернативы можно использовать [машину на AWS](../recipes/aws-micro-instance.md) в течение 12 месяцев бесплатно.
+{% endhint %}
