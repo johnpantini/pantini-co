@@ -205,7 +205,7 @@ exports = function ({ query, headers, body }, response) {
       try {
         if (data.e === 'ticker') {
           const pusherCredentials = [%#JSON.stringify(await (async () => {
-            const api = await ctx.app.ppp.user.functions.findOne({collection:'apis'},{removed:{$not:{$eq:true}},name:'Pusher'},{iv:1,appid:1,key:1,secret:1,cluster:1});
+            const api = await ctx.app.ppp.user.functions.findOne({collection:'apis'},{removed:{$not:{$eq:true}},type:'pusher',name:'Pusher'},{iv:1,appid:1,key:1,secret:1,cluster:1});
 
             return {
               appid: api.appid,
