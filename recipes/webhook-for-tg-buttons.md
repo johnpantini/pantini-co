@@ -316,7 +316,7 @@ exports = function ({ query, headers, body }, response) {
     }
   }
 
-  const pusher = new Pusher('Ваш App Id в Pusher', {
+  const pusher = new Pusher('Ваш Key в Pusher', {
     cluster: 'Ваш кластер в Pusher'
   });
   const channel = pusher.subscribe('telegram');
