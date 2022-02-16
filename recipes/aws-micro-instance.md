@@ -34,7 +34,7 @@
 
 На втором шаге выбираем тип **t2.micro**, нажимаем затем **Next: Configure Instance Details**:
 
-![](<../.gitbook/assets/image (346).png>)
+![](<../.gitbook/assets/image (346) (1).png>)
 
 На третьем шаге ничего не трогаем, нажимаем **Next: Add Storage**. Далее вводим размер от 10 до 30 GiB:
 
