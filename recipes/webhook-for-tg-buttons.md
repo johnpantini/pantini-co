@@ -286,6 +286,7 @@ exports = function ({ query, headers, body }, response) {
 ```javascript
 // ==UserScript==
 // @name         Tinkoff Terminal Pusher Integration
+// @description  Tinkoff Terminal Pusher Integration
 // @namespace    https://github.com/johnpantini/ppp
 // @version      1.0
 // @author       johnpantini
@@ -342,3 +343,181 @@ exports = function ({ query, headers, body }, response) {
 ![](<../.gitbook/assets/image (351).png>)
 
 После этих действий обновите страницу с терминалом.
+
+### Подстановка цены и объема в расширении Tampermonkey
+
+Это более сложный пример, в котором нажатие кнопки под сообщением подставляет цену, рассчитываемую по текущей цене **ask** бумаги с настраиваемым проскальзыванием (задаётся в 16-й строке в процентах, по умолчанию 0,3%). Объем устанавливается исходя из предельной суммы, которая задаётся в 18-й строке (по умолчанию 1000 единиц валюты инструмента).
+
+```javascript
+// ==UserScript==
+// @name         Tinkoff Terminal Pusher Integration
+// @description  Tinkoff Terminal Pusher Integration
+// @namespace    https://github.com/johnpantini/ppp
+// @version      1.0
+// @author       johnpantini
+// @match        https://www.tinkoff.ru/terminal/*
+// @icon         https://www.tinkoff.ru/favicon.ico
+// @require      https://js.pusher.com/7.0/pusher.min.js
+// @noframes
+// @grant        none
+// ==/UserScript==
+
+(function () {
+  // %
+  const SLIP = 0.3;
+  // 1000$ or 1000 RUB or 1000 EUR etc.
+  const MAX_AMOUNT = 1000;
+
+  function getCook(cookiename) {
+    const cookiestring = RegExp('' + cookiename + '[^;]+').exec(
+      document.cookie
+    );
+
+    return decodeURIComponent(
+      !!cookiestring ? cookiestring.toString().replace(/^[^=]+./, '') : ''
+    );
+  }
+
+  function getPsid() {
+    return getCook('psid');
+  }
+
+  const getInstrumentByTicker = (ticker) => {
+    if (ticker === 'USDRUB') ticker = 'USD000UTSTOM';
+
+    if (ticker === 'EURRUB') ticker = 'EUR_RUB__TOM';
+
+    const instruments = window.store.getState().data.assets.instruments;
+
+    for (const figi of Object.keys(instruments)) {
+      if (instruments[figi].ticker === ticker) return instruments[figi];
+    }
+  };
+
+  async function getOrderBook(instrument) {
+    if (instrument) {
+      const client = new WebSocket(
+        `wss://api-invest.tinkoff.ru/mdstream-public/v1/md-stream/socket.io/?appName=invest_terminal&sessionId=${getPsid()}&EIO=3&transport=websocket`
+      );
+
+      return new Promise((resolve) => {
+        client.addEventListener('error', () => resolve([]));
+
+        client.onmessage = (e) => {
+          if (/sid/.test(e.data))
+            client.send(
+              `42["orderbook:subscribe","{\\"depth\\":1,\\"symbols\\":[\\"${
+                instrument.ticker + '_' + instrument.classCode
+              }\\"]}"]`
+            );
+          else if (/orderbook/.test(e.data)) {
+            client.close();
+            resolve(
+              JSON.parse(
+                e.data
+                  .replace('42[', '[')
+                  .replace('"{', '{')
+                  .replace('}"', '}')
+                  .replaceAll(/\\/gi, '')
+              )
+            );
+          }
+        };
+      });
+    } else return Promise.resolve([]);
+  }
+
+  const findReactEventHandlers = function (dom) {
+    const key = Object.keys(dom).find((key) => key.startsWith('__reactProps$'));
+
+    if (!key) return null;
+
+    return dom[key];
+  };
+
+  async function setWidgetTicker(widget, ticker) {
+    if (widget && ticker) {
+      const key = Object.keys(widget).find((key) =>
+        key.startsWith('__reactFiber$')
+      );
+
+      if (key) {
+        const internalInstance = widget[key];
+
+        if (internalInstance) {
+          const selectSymbol =
+            internalInstance.return?.memoizedProps?.selectSymbol;
+
+          if (selectSymbol) {
+            selectSymbol(ticker.toUpperCase());
+
+            const instrument = getInstrumentByTicker(ticker.toUpperCase());
+            const orderbook = await getOrderBook(instrument);
+
+            if (orderbook.length && SLIP > 0 && MAX_AMOUNT > 0) {
+              let askPrice = orderbook[1]?.asks[0]?.[0] ?? 0;
+
+              if (askPrice > 0) {
+                const precision = instrument.minPriceIncrement
+                  .toString()
+                  .split('.')[1].length;
+
+                askPrice = (askPrice + (askPrice * SLIP) / 100).toFixed(
+                  precision
+                );
+
+                const leftInputHolder = widget.querySelector(
+                  'div[class*="OrderForm-OrderForm-leftInput-"]'
+                );
+                const priceInput = leftInputHolder.querySelector('input');
+                const rightInputHolder = leftInputHolder.nextElementSibling;
+                const volumeInput = rightInputHolder.querySelector('input');
+
+                if (priceInput && askPrice > 0) {
+                  const reactHandlers = findReactEventHandlers(priceInput);
+
+                  if (reactHandlers) {
+                    reactHandlers.onChange({
+                      target: { value: askPrice.toString() },
+                      currentTarget: { value: askPrice.toString() }
+                    });
+                  }
+                }
+
+                if (volumeInput) {
+                  const reactHandlers = findReactEventHandlers(volumeInput);
+                  const amount = Math.floor(MAX_AMOUNT / askPrice);
+
+                  if (reactHandlers) {
+                    reactHandlers.onChange({
+                      target: { value: amount.toString() },
+                      currentTarget: { value: amount.toString() }
+                    });
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  const pusher = new Pusher('Ваш Key (ключ приложения) в Pusher', {
+    cluster: 'Ваш кластер в Pusher'
+  });
+  const channel = pusher.subscribe('telegram');
+
+  channel.bind('ticker', function (data) {
+    void setWidgetTicker(
+      document
+        .querySelector(
+          '[data-widget-type="COMBINED_ORDER_WIDGET"] div[style*="color: rgb(255, 212, 80)"]'
+        )
+        .closest('[data-widget-type="COMBINED_ORDER_WIDGET"]'),
+      data.t
+    );
+  });
+})();
+```
+
