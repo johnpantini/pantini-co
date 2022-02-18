@@ -466,33 +466,59 @@ exports = function ({ query, headers, body }, response) {
                   precision
                 );
 
-                const leftInputHolder = widget.querySelector(
-                  'div[class*="OrderForm-OrderForm-leftInput-"]'
-                );
-                const priceInput = leftInputHolder.querySelector('input');
-                const rightInputHolder = leftInputHolder.nextElementSibling;
-                const volumeInput = rightInputHolder.querySelector('input');
+                const tabs = widget.querySelector('[data-qa-tag="tabs"]');
 
-                if (priceInput && askPrice > 0) {
-                  const reactHandlers = findReactEventHandlers(priceInput);
+                if (tabs) {
+                  const key = Object.keys(tabs).find((key) =>
+                    key.startsWith('__reactFiber$')
+                  );
 
-                  if (reactHandlers) {
-                    reactHandlers.onChange({
-                      target: { value: askPrice.toString() },
-                      currentTarget: { value: askPrice.toString() }
-                    });
-                  }
-                }
+                  if (key) {
+                    const internalInstance = tabs[key];
 
-                if (volumeInput) {
-                  const reactHandlers = findReactEventHandlers(volumeInput);
-                  const amount = Math.floor(MAX_AMOUNT / askPrice);
+                    if (internalInstance) {
+                      const changeTab =
+                        internalInstance.return?.memoizedProps?.onChange;
 
-                  if (reactHandlers) {
-                    reactHandlers.onChange({
-                      target: { value: amount.toString() },
-                      currentTarget: { value: amount.toString() }
-                    });
+                      if (changeTab) {
+                        changeTab('Limit');
+
+                        const leftInputHolder = widget.querySelector(
+                          'div[class*="OrderForm-OrderForm-leftInput-"]'
+                        );
+                        const priceInput =
+                          leftInputHolder.querySelector('input');
+                        const rightInputHolder =
+                          leftInputHolder.nextElementSibling;
+                        const volumeInput =
+                          rightInputHolder.querySelector('input');
+
+                        if (priceInput && askPrice > 0) {
+                          const reactHandlers =
+                            findReactEventHandlers(priceInput);
+
+                          if (reactHandlers) {
+                            reactHandlers.onChange({
+                              target: { value: askPrice.toString() },
+                              currentTarget: { value: askPrice.toString() }
+                            });
+                          }
+                        }
+
+                        if (volumeInput) {
+                          const reactHandlers =
+                            findReactEventHandlers(volumeInput);
+                          const amount = Math.floor(MAX_AMOUNT / askPrice);
+
+                          if (reactHandlers) {
+                            reactHandlers.onChange({
+                              target: { value: amount.toString() },
+                              currentTarget: { value: amount.toString() }
+                            });
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
