@@ -48,11 +48,7 @@
 [service-machine.md](service-machine.md)
 {% endcontent-ref %}
 
-Наконец, создайте приложение **ppp** в облачных сервисах **Auth0** и **MongoDB Realm**:
-
-{% content-ref url="auth0.md" %}
-[auth0.md](auth0.md)
-{% endcontent-ref %}
+Наконец, создайте приложение **ppp** в **MongoDB Realm**:
 
 {% content-ref url="mongodb.md" %}
 [mongodb.md](mongodb.md)
