@@ -418,7 +418,7 @@ exports = function ({ query, headers, body }, response) {
           if (/sid/.test(e.data))
             client.send(
               `42["orderbook:subscribe","{\\"depth\\":1,\\"symbols\\":[\\"${
-                instrument.ticker + '_' + instrument.classCode
+                instrument.instrumentUid
               }\\"]}"]`
             );
           else if (/orderbook/.test(e.data)) {
