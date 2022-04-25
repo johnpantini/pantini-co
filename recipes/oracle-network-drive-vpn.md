@@ -6,7 +6,7 @@
 
 > All tenancies receive a total of 200 GB of [Block Volume](https://docs.oracle.com/en-us/iaas/Content/Block/Concepts/overview.htm#Overview\_of\_Block\_Volume) storage, and five volume backups included in the Always Free resources. These amounts apply to both boot volumes and block volumes combined. When you provision a compute instance, the instance automatically receives a 50 GB [boot volume](https://docs.oracle.com/en-us/iaas/Content/Block/Concepts/bootvolumes.htm#Boot\_Volumes) for storage.
 
-Если у вас уже есть виртуальные машины, то на каждую автоматически расходуется 50 GB хранилища, уменьшая доступные бесплатные ресурсы. Так, если вы настраивали **ppp** по инструкции и создали экземпляр машины под управлением [Oracle Linux](../ppp/oracle-cloud.md), то вам будет доступно не 200, а 150 GB бесплатного места (50GB займет сама машина).
+Если у вас уже есть виртуальные машины, то на каждую автоматически расходуется 50 GB хранилища, уменьшая доступные бесплатные ресурсы. Так, если вы настраивали **ppp** по инструкции и создали экземпляр машины под управлением [Oracle Linux](oracle-cloud.md), то вам будет доступно не 200, а 150 GB бесплатного места (50GB займет сама машина).
 
 Чтобы проверить личные лимиты и расходование хранилищ, перейдите в раздел [Limits, Quotas and Usage](https://cloud.oracle.com/limits) , затем выберите **Block Volume** из выпадающего списка **Service**:
 

@@ -24,10 +24,10 @@
 * [⛅️ Cloudflare Pages](ppp/cloudflare-pages.md)
 * [Сервисная машина](ppp/service-machine.md)
 * [🔑 MongoDB](ppp/mongodb.md)
-* [☁️ Oracle Cloud](ppp/oracle-cloud.md)
 
 ## ❓ Рецепты <a href="#recipes" id="recipes"></a>
 
+* [☁️ Oracle Cloud](recipes/oracle-cloud.md)
 * [Микромашина в AWS](recipes/aws-micro-instance.md)
 * [Открыть порт в Oracle Cloud](recipes/open-port-oracle-cloud.md)
 * [Настройка домена](recipes/setting-up-domain.md)
