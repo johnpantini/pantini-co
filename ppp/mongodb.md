@@ -26,7 +26,7 @@
 
 Заполняйте поля, как показано на картинке, затем нажимайте **Create Realm Application**:
 
-![](<../.gitbook/assets/image (345) (1).png>)
+![](<../.gitbook/assets/image (345) (1) (1).png>)
 
 ## Получение административных ключей MongoDB Realm
 

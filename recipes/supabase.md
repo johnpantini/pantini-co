@@ -16,7 +16,7 @@ Supabase - платформа бессерверной разработки на
 
 Как только проект будет готов, переходим в раздел **Database**, подраздел **Extensions**:
 
-![](<../.gitbook/assets/image (347) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (347) (1) (1) (1) (1).png>)
 
 Включаем расширения HTTP, PLV8, POSTGRES\_FDW**.**
 
