@@ -17,13 +17,17 @@
   * [Определение цен открытия/закрытия бумаг с Nasdaq](faq/stock-exchange/nasdaq-crosses.md)
 * [Alor](faq/alor.md)
 
-## 💻 PPP
+## PPP
 
 * [Первые шаги](ppp/getting-started.md)
 * [🔑 GitHub](ppp/github.md)
 * [⛅️ Cloudflare Pages](ppp/cloudflare-pages.md)
 * [Сервисная машина](ppp/service-machine.md)
 * [🔑 MongoDB](ppp/mongodb.md)
+
+## 👹 Psina
+
+* [Что делать](psina/how-to.md)
 
 ## ❓ Рецепты <a href="#recipes" id="recipes"></a>
 
