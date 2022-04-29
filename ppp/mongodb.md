@@ -2,6 +2,14 @@
 
 ## Создание учётной записи в облачном сервисе MongoDB Realm <a href="#mongodb-realm" id="mongodb-realm"></a>
 
+{% hint style="danger" %}
+На текущий момент облачные сервисы **MongoDB** блокируют запросы с российских IP-адресов. Приложение **ppp** обходит это ограничение, но на этапе сбора ключей может потребоваться воспользоваться VPN.
+
+Участники проектов сообщают, что с этой задачей хорошо справляется расширение **ZenMate** для браузера, которое можно установить по ссылке:
+
+[https://zenmate.com/products/vpn-chrome](https://zenmate.com/products/vpn-chrome)
+{% endhint %}
+
 Переходим по [ссылке](https://www.mongodb.com/realm/register):
 
 {% embed url="https://www.mongodb.com/realm/register" %}
