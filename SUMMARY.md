@@ -27,7 +27,7 @@
 
 ## 👹 Psina
 
-* [Что делать](psina/how-to.md)
+* [Что делать?](psina/how-to.md)
 
 ## ❓ Рецепты <a href="#recipes" id="recipes"></a>
 

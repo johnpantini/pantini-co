@@ -1,6 +1,6 @@
 # Сервисная машина
 
-## Через облачный сервис Northflank (предпочтительно)
+## Через облачный сервис Northflank
 
 {% hint style="info" %}
 Машины в этом сервисе работают бесперебойно.
@@ -50,34 +50,32 @@
 
 После завершения создания URL сервисной машины можно будет найти на странице сервиса в правой верхней части страницы. Он оканчивается на **code.run**
 
-## Через облачный сервис Heroku
+## Через облачный сервис Koyeb
 
 {% hint style="info" %}
-Машины в этом сервисе уходят в спящий режим, если нет активности. Выход из спящего режима (холодный старт) занимает до 10 секунд.
+Этот сервис не требует привязки платёжной карты.
 {% endhint %}
 
-Переходим по ссылке [https://signup.heroku.com/](https://signup.heroku.com) и регистрируемся:
+Переходим по ссылке [https://app.koyeb.com/auth/signup](https://app.koyeb.com/auth/signup)
 
-{% embed url="https://signup.heroku.com" %}
+Нажимаем на кнопку **Sign Up with GitHub**. Авторизуем сервис в **GitHub**, после чего проходим опросник. На первом этапе выбираем вариант **Personal**, а далее - что угодно:
 
-В поле **Role** можно указать **Professional Developer**, в поле **Primary development language** - **Node.js**.
+![](<../.gitbook/assets/image (348).png>)
 
-На почту придёт письмо с подтверждением. Переходим по ссылке, вводим пароль для учётной записи. Далее переходим на страницу [https://dashboard.heroku.com/terms-of-service](https://dashboard.heroku.com/terms-of-service)
+Активация сервиса займёт время, о чем будет сообщено:
 
-{% embed url="https://dashboard.heroku.com/terms-of-service" %}
+![](<../.gitbook/assets/image (362).png>)
 
-Нажимаем **Accept**. Нас перенесут на страницу [https://dashboard.heroku.com/apps](https://dashboard.heroku.com/apps)
+Процесс одобрения может занять около суток, следует проверять электронную почту. Когда процесс будет завершён, переходите к созданию нового приложения по ссылке [https://app.koyeb.com/apps/new](https://app.koyeb.com/apps/new)
 
-{% embed url="https://dashboard.heroku.com/apps" %}
+Имя можно ввести **ppp**. Затем перейдите во вновь созданное приложение и нажмите **Create Service**. Пример заполнения показан на картинках ниже:
 
-Нажимаем **Create new app**. Вводим любое имя, регион указываем **Europe**. Нажимаем **Create app**:
+![В поле Repository укажите вашу копию репозитория ppp](<../.gitbook/assets/image (352).png>)
 
-![](<../.gitbook/assets/image (343).png>)
+![](<../.gitbook/assets/image (349).png>)
 
-Нас перенесут на вкладку **Deploy**. В секции **Deployment method** выбираем **GitHub**. Нажимаем **Connect to GitHub**. Далее во всплывающем окне нажимаем **Authorize heroku**.
+![](<../.gitbook/assets/image (346).png>)
 
-После этого страница обновится, в поле **repo-name** вводим **ppp** и нажимаем кнопку **Search**. Снизу появится строка с названием репозитория, нажимаем **Connect**.
+Нажимайте **Create Service** и ожидайте окончания сборки (должно занять менее минуты).
 
-Далее нажимаем кнопки **Enable Automatic Deploys** и **Deploy Branch**:
-
-![](<../.gitbook/assets/image (348) (1) (1) (1) (1).png>)
+URL сервисной машины можно найти на странице [https://app.koyeb.com/](https://app.koyeb.com) в карточке приложения.
