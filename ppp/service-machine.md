@@ -36,7 +36,7 @@
 
 Тип сервиса **Combined**, имя **ppp**, репозиторий **ppp** (ваша копия), ветвь **main**, тип сборки **Buildpack**:
 
-![](<../.gitbook/assets/image (359).png>)
+![](<../.gitbook/assets/image (359) (1).png>)
 
 Добавьте переменную окружения PORT со значением 3777 в секции **Environment variables**:
 
