@@ -206,7 +206,7 @@ return {
 {% endhint %}
 
 ```javascript
-exports = function ({ query, headers, body }, response) {
+exports = async function ({ query, headers, body }, response) {
   try {
     const payload = EJSON.parse(body.text());
 
@@ -250,7 +250,7 @@ exports = function ({ query, headers, body }, response) {
 
           params += `&auth_signature=${authSignature}`;
 
-          context.http.post({
+          await context.http.post({
             url: `https://api-${pusherCredentials.cluster}.pusher.com/apps/${pusherCredentials.appid}/events?${params}`,
             body: pusherBody,
             headers: {
@@ -260,18 +260,18 @@ exports = function ({ query, headers, body }, response) {
         }
       } finally {
         const token = `[%#(await (async () => {
-          const bot = await ctx.app.ppp.user.functions.findOne({collection:'bots'},{removed:{$not:{$eq:true}},name:'Onaryx'},{iv:1,token:1});
+          const bot = await ctx.app.ppp.user.functions.findOne({collection:'bots'},{removed:{$not:{$eq:true}},name:'Toxic Aspirant'},{iv:1,token:1});
 
           return await ctx.app.ppp.crypto.decrypt(bot.iv, bot.token);
         })())%]`;
 
-        context.http.get({
+        await context.http.get({
           url: `https://api.telegram.org/bot${token}/answerCallbackQuery?callback_query_id=${payload.callback_query.id}&text=🆗`
         });
       }
     }
 
-    response.setStatusCode(204);
+    return '200 OK';
   } catch (e) {
     response.setStatusCode(500);
   }
