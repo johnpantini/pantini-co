@@ -260,7 +260,7 @@ exports = async function ({ query, headers, body }, response) {
         }
       } finally {
         const token = `[%#(await (async () => {
-          const bot = await ctx.app.ppp.user.functions.findOne({collection:'bots'},{removed:{$not:{$eq:true}},name:'Toxic Aspirant'},{iv:1,token:1});
+          const bot = await ctx.app.ppp.user.functions.findOne({collection:'bots'},{removed:{$not:{$eq:true}},name:'Onaryx'},{iv:1,token:1});
 
           return await ctx.app.ppp.crypto.decrypt(bot.iv, bot.token);
         })())%]`;
