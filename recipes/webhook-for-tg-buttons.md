@@ -284,13 +284,13 @@ exports = async function ({ query, headers, body }, response) {
 
 ## Прием уведомлений в терминале ТИ
 
-Установите расширение [Tampermonkey](https://www.tampermonkey.net) в браузер:
+Установите расширение [Tampermonkey](https://www.tampermonkey.net/) в браузер:
 
 {% embed url="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=ru" %}
 
 Нажмите на значок расширения (если значка нет, то найдите значок паззла справа от адресной строки), затем **Создать новый скрипт...**:
 
-![](<../.gitbook/assets/image (346) (1).png>)
+![](<../.gitbook/assets/image (346) (1) (1).png>)
 
 Вставьте следующий код (_в нём требуется заменить два значения, см. ниже_), затем нажмите **Сохранить** в меню **Файл**:
 

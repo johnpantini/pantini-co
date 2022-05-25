@@ -74,8 +74,8 @@
 
 ![](<../.gitbook/assets/image (349).png>)
 
-![](<../.gitbook/assets/image (346).png>)
+![](<../.gitbook/assets/image (346) (1).png>)
 
 Нажимайте **Create Service** и ожидайте окончания сборки (должно занять менее минуты).
 
-URL сервисной машины можно найти на странице [https://app.koyeb.com/](https://app.koyeb.com) в карточке приложения.
+URL сервисной машины можно найти на странице [https://app.koyeb.com/](https://app.koyeb.com/) в карточке приложения.
