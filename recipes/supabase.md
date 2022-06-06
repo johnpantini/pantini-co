@@ -18,7 +18,9 @@ Supabase - платформа бессерверной разработки на
 
 ![](<../.gitbook/assets/image (347) (1) (1) (1) (1).png>)
 
-Включаем расширения HTTP, PLV8, POSTGRES\_FDW**.**
+Включаем расширения HTTP, PLV8, DBLINK, PG\_CRON:
+
+![](<../.gitbook/assets/image (358).png>)
 
 ### **Данные для подключения в ppp**
 

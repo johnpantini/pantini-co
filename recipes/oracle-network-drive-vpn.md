@@ -106,7 +106,7 @@ sudo sudo systemctl restart nmb
 
 Вернитесь в браузер и вставьте адрес в поле **Manually Add Member**:
 
-![](<../.gitbook/assets/image (358) (1).png>)
+![](<../.gitbook/assets/image (358) (1) (1).png>)
 
 После добавления клиента убедитесь, что проставлен флажок **Auth**:
 
