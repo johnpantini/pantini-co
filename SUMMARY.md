@@ -25,9 +25,9 @@
 * [Сервисная машина](ppp/service-machine.md)
 * [🔑 MongoDB](ppp/mongodb.md)
 
-## ppp - Сервисы
+## ppp - Сервисы <a href="#ppp-services" id="ppp-services"></a>
 
-* [Торговые паузы NYSE/NSDQ](ppp-servisy/nyse-nsdq-halts.md)
+* [Торговые паузы NYSE/NSDQ](ppp-services/nyse-nsdq-halts.md)
 
 ## 👹 Psina
 
