@@ -4,7 +4,7 @@
 
 ## Загрузка терминала Аврора
 
-[https://unitedtraders.biz/trading/aurora](https://unitedtraders.biz/trading/aurora)
+[https://utex.io/aurora](https://utex.io/aurora)
 
 ## Установка Авроры
 
