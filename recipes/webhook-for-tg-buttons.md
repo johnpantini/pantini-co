@@ -322,7 +322,7 @@ exports = async function ({ query, headers, body }, response) {
           const selectSymbol =
             internalInstance.return?.memoizedProps?.selectSymbol;
 
-          selectSymbol?.(ticker.toUpperCase());
+          selectSymbol?.(ticker.toUpperCase().replace(' ', '.'));
         }
       }
     }
@@ -460,9 +460,9 @@ exports = async function ({ query, headers, body }, response) {
             internalInstance.return?.memoizedProps?.selectSymbol;
 
           if (selectSymbol) {
-            selectSymbol(ticker.toUpperCase());
+            selectSymbol(ticker.toUpperCase().replace(' ', '.'));
 
-            const instrument = getInstrumentByTicker(ticker.toUpperCase());
+            const instrument = getInstrumentByTicker(ticker.toUpperCase().replace(' ', '.'));
             const orderbook = await getOrderBook(instrument);
 
             if (orderbook.length && SLIP > 0 && MAX_AMOUNT > 0) {
