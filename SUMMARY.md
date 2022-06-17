@@ -28,6 +28,7 @@
 ## ppp - Сервисы <a href="#ppp-services" id="ppp-services"></a>
 
 * [Торговые паузы NYSE/NASDAQ](ppp-services/nyse-nsdq-halts.md)
+* [Парсер The Fly](ppp-services/the-fly.md)
 
 ## 👹 Psina
 
