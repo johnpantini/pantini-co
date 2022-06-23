@@ -6,6 +6,12 @@
 
 {% embed url="https://ppp-production.up.railway.app/" %}
 
+{% hint style="info" %}
+Альтернативная ссылка:
+
+[https://johnpantini.fly.dev/](https://johnpantini.fly.dev/)
+{% endhint %}
+
 ## Через облачный сервис Northflank
 
 {% hint style="info" %}
