@@ -42,6 +42,7 @@
 * [Настройка домена](recipes/setting-up-domain.md)
 * [Настройка Supabase](recipes/supabase.md)
 * [Настройка Pusher](recipes/pusher.md)
+* [Настройка Algolia](recipes/algolia.md)
 * [Oracle: сетевой диск+VPN](recipes/oracle-network-drive-vpn.md)
 * [Webhook для кнопок TG](recipes/webhook-for-tg-buttons.md)
 
