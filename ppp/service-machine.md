@@ -4,12 +4,16 @@
 
 Можете пользоваться готовой машиной и ничего не настраивать. Ссылка ниже:
 
-{% embed url="https://ppp-production.up.railway.app/" %}
+[https://dyno--ppp--ppp--kcq3-5fgt.code.run/](https://dyno--ppp--ppp--kcq3-5fgt.code.run/)
 
 {% hint style="info" %}
-Альтернативная ссылка:
+Альтернативные ссылки:
 
 [https://johnpantini.fly.dev/](https://johnpantini.fly.dev/)
+
+[https://ppp-production.up.railway.app/](https://ppp-production.up.railway.app/)
+
+[https://ppp-vfkz.onrender.com/](https://ppp-vfkz.onrender.com/)
 {% endhint %}
 
 ## Через облачный сервис Northflank
