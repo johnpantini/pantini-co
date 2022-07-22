@@ -13,8 +13,6 @@
 {% hint style="info" %}
 Альтернативные ссылки:
 
-[https://johnpantini.fly.dev/](https://johnpantini.fly.dev/)
-
 [https://ppp-production.up.railway.app/](https://ppp-production.up.railway.app/)
 
 [https://ppp-vfkz.onrender.com/](https://ppp-vfkz.onrender.com/)
